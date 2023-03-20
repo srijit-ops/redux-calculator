@@ -1,9 +1,4 @@
-import {createStore, combineReducers} from "redux"
-import decrementReducer from "./number/decrementReducer"
-import incrementReducer from "./number/incrementReducer"
-const rootReducer= combineReducers({
-    increment:incrementReducer,
-    decrement:decrementReducer
-})
-const store= createStore(rootReducer)
+import {createStore} from "redux"
+import reducer from "./number/reducer"
+const store= createStore(reducer)
 export default store

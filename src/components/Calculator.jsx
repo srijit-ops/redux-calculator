@@ -7,6 +7,7 @@ function Calculator(props) {
   
   return (
     <div>
+      {console.log(props)}
       {console.log(props.num)}
         <h1>{props.num}</h1>
         <button onClick={props.incrementNum}>+</button>
@@ -17,8 +18,8 @@ function Calculator(props) {
 //console.log(state.num)
 //console.log(initialState.num)
 
-const mapStateToProps=(state=initialState)=>{
-  console.log(state.num)
+const mapStateToProps=(state)=>{
+  console.log(state)
   return {
     num:state.num
   }
